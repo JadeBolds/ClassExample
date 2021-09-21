@@ -1,25 +1,23 @@
 
-// To create a static keyword youneed to be using a block,variable,method or,nested class, 
-Make sure to put its declaration with the keyword static. 
-When its declared static, it can be accessed before any objects 
-of its class are created, and without reference to any object.
+package classExample;
+
+// To create a static keyword youneed to be using a block, variable, method, or nested class,
+//Make sure to put its declaration with the keyword static.
+// When its declared static, it can be accessed before any objects
+// of its class are created, and without reference to any object.
 
 class Test
 {
     // static variable
+    //a will be defined as the string "The Tight Ten"
     static String a = "The Tight Ten";
     static String b;
-      
-    // static block
-    static {
-        System.out.println("Static block initialized.");
-        b = a + "is one big family";
-    }
-  
+
+    
     public static void main(String[] args)
     {
-       System.out.println("from main");
-       System.out.println("Value of a : "+a);
-       System.out.println("Value of b : "+b);
+        System.out.println("random name");
+        System.out.println("Value of a : "+a);
+        System.out.println("Value of b : "+b);
     }
 }
