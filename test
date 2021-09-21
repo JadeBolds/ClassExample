@@ -9,11 +9,15 @@ package classExample;
 class Test
 {
     // static variable
-    //a will be defined as the string "The Tight Ten"
-    static String a = "The Tight Ten";
+    //a will be defined as the string "The Tight Ten "
+    static String a = "The Tight Ten ";
     static String b;
 
-    
+    // static block
+    static {
+        b = a + "is one big family";
+    }
+
     public static void main(String[] args)
     {
         System.out.println("random name");
